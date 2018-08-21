@@ -1,13 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
-	"github.com/flier/gohs/hyperscan"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"io"
 	"net"
 	"net/http"
@@ -16,6 +17,11 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/flier/gohs/hyperscan"
+	log "github.com/sirupsen/logrus"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // with sync for resource lock
